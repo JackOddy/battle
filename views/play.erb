@@ -1,8 +1,7 @@
-<%= @player_1_name %> vs <%= @player_2_name %>
-<div>
-<%= @player_2_name %>: 100HP
+<div id='match'><div><div id='p1n'><%= @player_1_name %><div id='p1hp'>100HP</div></div> vs <div id='p2n'><%= @player_2_name %><div id='p2hp'>100HP</div></div></div>
+<div></div>
 </div>
 <form method='post'>
-<button type='submit' value='Attack'>Attack!</button>
+<button type='submit' value='Attack'>
 </form>
 <div><h2><%= yield %></h2></div>

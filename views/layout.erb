@@ -5,19 +5,20 @@
 body{
   text-align: center;
   font-family: katana;
+  background-color: lightcoral;
 }
   h1{font-family: gang of three;
     font-size: 90px;
     text-align: center;
     color: gold;
-    text-shadow: 3px 3px lightseagreen;
+    text-shadow: 3px 3px black;
     }
     @import url('/gang-of-three.regular.ttf');
     @import url('/katanf.regular.ttf');
     #p1n {
     font-family: katana shadow;
     font-size: 45px;
-    color: lightseagreen;
+    color: antiquewhite;
     position: absolute;
     left: 20%;
     right: 70%;
@@ -26,7 +27,7 @@ body{
     #p2n {
     font-family: katana shadow;
     font-size: 45px;
-    color: crimson;
+    color: antiquewhite;
     position: absolute;
     left: 70%;
     right: 20%;
@@ -43,24 +44,37 @@ body{
       font-family: katana;
       right: 193px;
     }
-    button{position: absolute;
-    bottom: 50%;
-    left: 20%;
-    border: red;
+    #buttons{
+      position: relative;
+      top: 60px;
+    }
+    button{margin-left: 10px;
     border: solid;
-    border-radius: 40px;
-    height: 50px;
-    width: 50px;
-    background: url('https://d30y9cdsu7xlg0.cloudfront.net/png/52729-200.png');
-    background-size: contain;
-  }
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    }
+    #atk{
+      background: url('https://d30y9cdsu7xlg0.cloudfront.net/png/52729-200.png');
+      background-size: contain;
+    }
+    #ppr{
+      background: url('https://d30y9cdsu7xlg0.cloudfront.net/png/11642-200.png');
+      background-size: contain;
+    }
+    #scrs{
+      background: url('https://d30y9cdsu7xlg0.cloudfront.net/png/88664-200.png');
+      background-size: contain;
+    }
     button:hover{
       transform: scale(1.3);
     }
+    .button:active{
+      transform: scale(1);
+    }
     button:active{
-      outline: no-outline;
-      position: fixed;
-      top: 2px;
+      outline: none;
     }
     </style>
 <body>
